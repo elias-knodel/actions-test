@@ -26,6 +26,6 @@ jobs:
     - name: Rebase
       run: |
         git status
-        git rebase origin/fake-master
+        git rebase fake-master
         git push --force
         git status
