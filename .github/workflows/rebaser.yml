@@ -27,7 +27,7 @@ jobs:
     - name: Rebase
       run: |
         git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
-        git config --global user.email ${{ github.USER_EMAIL }}
-        git config --global user.name ${{ github.USER_NAME }}
+        git config --global user.email "elias.knodel@gmail.com"
+        git config --global user.name "elias-knodel"
         git rebase remotes/origin/fake-master
         git push --force
