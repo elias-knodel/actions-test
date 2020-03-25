@@ -26,6 +26,7 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Rebase
       run: |
+        git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
         git status
         git branch -a
         git push --force
