@@ -24,9 +24,8 @@ jobs:
     - name: Rebase
       run: |
         git status
-        git checkout fake-master
-        git pull 
-        git rebase origin/master
         git checkout master
+        git pull 
+        git rebase origin/fake-master
         git push --force
         git status
