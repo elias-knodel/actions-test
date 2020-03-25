@@ -29,4 +29,4 @@ jobs:
         git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
         git branch -a
         git rebase renites/origin/fake-master
-        git push
+        git push --force
