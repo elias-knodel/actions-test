@@ -27,7 +27,5 @@ jobs:
     - name: Rebase
       run: |
         git fetch --no-tags --prune --depth=1 origin +refs/heads/*:refs/remotes/origin/*
-        git status
-        git branch -a
+        git reabase origin/fake-master
         git push --force
-        git status
